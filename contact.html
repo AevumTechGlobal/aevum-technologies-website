@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101827" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/theme.js"></script>
+    <meta name="description" content="Contact Aevum Technologies for software, cybersecurity, cloud, AI, data, education and advisory enquiries. The form is ready for secure backend integration when configured." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact Aevum Technologies" />
+    <meta property="og:description" content="Let's get your next project moving. Enquire about software, cybersecurity, cloud, AI, analytics, technology education or advisory support." />
+    <meta property="og:image" content="./assets/images/aevum-emblem-gold.png" />
+    <meta property="og:image:alt" content="Aevum Technologies gold emblem" />
+    <title>Contact | Aevum Technologies</title>
+    <link rel="icon" type="image/png" href="./assets/images/aevum-emblem-gold.png" />
+    <script type="module" crossorigin src="/js/contact.js"></script>
+  </head>
+  <body class="interior-page contact-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header"><div class="header-inner">
+      <a class="brand" href="/" aria-label="Aevum Technologies home"><img src="./assets/images/aevum-logo-gold.png" alt="Aevum" width="150" height="150" /></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu"><span></span><span></span></button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/about.html">About</a>
+        <a class="nav-link" href="/services.html">Services</a>
+        <a class="nav-link" href="/solutions.html">Solutions</a>
+        <a class="nav-link" href="/careers.html">Careers</a>
+        <a class="nav-link is-active" href="/contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a class="header-contact" href="/contact.html" aria-current="page">Get in touch</a>
+    </div></header>
+    <main id="main-content">
+      <section class="contact-heading section-shell">
+        <p class="eyebrow"><span></span> Contact Aevum</p>
+        <h1>Let’s get your next project <em>moving.</em></h1>
+        <p>Whether you need a website, custom software, cybersecurity support, cloud solutions, data analytics or technology training, Aevum is ready to hear from you. Tell us what you need, choose the services you are interested in and send us an enquiry.</p>
+      </section>
+
+      <section class="contact-layout section-shell">
+        <aside class="contact-context">
+          <div class="contact-context-number">01<span> / START HERE</span></div>
+          <h2>Clear questions.<br /><em>Thoughtful technology.</em></h2>
+          <p>Tell us what you are building, improving or protecting. We will review your request and get back to you to discuss the next steps.</p>
+          <div class="contact-details-block">
+            <a href="mailto:aveumtechnologies@gmail.com">aveumtechnologies@gmail.com</a>
+            <a href="tel:+2348079912429">+234 807 991 2429</a>
+          </div>
+          <div class="contact-truth"><span class="availability-dot" aria-hidden="true"></span><p><strong>Secure backend delivery is pending configuration.</strong> This form is currently set up for browser validation and is not connected to an email or CRM service.</p></div>
+        </aside>
+
+        <form class="enquiry-form" id="contact-form" novalidate>
+          <div class="form-grid">
+            <label class="form-field"><span>Full Name <b aria-hidden="true">*</b></span><input name="name" autocomplete="name" required minlength="2" maxlength="100" aria-describedby="name-error" /><small class="field-error" id="name-error"></small></label>
+            <label class="form-field"><span>Email Address <b aria-hidden="true">*</b></span><input name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="email-error" /><small class="field-error" id="email-error"></small></label>
+            <label class="form-field"><span>Phone Number</span><input name="phone" type="tel" autocomplete="tel" maxlength="30" aria-describedby="phone-error" /><small class="field-error" id="phone-error"></small></label>
+
+            <label class="form-field form-field-wide">
+              <span>Select Service <b aria-hidden="true">*</b></span>
+              <select name="service" required aria-describedby="service-error">
+                <option value="">Choose a service</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="software-development">Software Development</option>
+                <option value="cloud-solutions">Cloud Solutions</option>
+                <option value="ai-automation">AI &amp; Automation</option>
+                <option value="data-analytics">Data Analytics</option>
+                <option value="education-mentorship">Education &amp; Mentorship</option>
+                <option value="security-consulting-advisory">Security Consulting &amp; Advisory</option>
+              </select>
+              <small class="field-error" id="service-error"></small>
+            </label>
+
+            <label class="form-field form-field-wide"><span>Project Details / Message <b aria-hidden="true">*</b></span><textarea name="message" rows="6" required minlength="10" maxlength="3000" aria-describedby="message-error"></textarea><small class="field-error" id="message-error"></small></label>
+
+            <div class="form-field form-field-wide checkbox-acknowledge">
+              <span>Privacy acknowledgement</span>
+              <label class="checkbox-inline"><input name="acknowledge" type="checkbox" required aria-describedby="acknowledge-error" /><span>I acknowledge that I have read and agree to the <a href="/privacy-policy.html">Privacy Policy</a> and <a href="/terms-of-use.html">Terms of Use</a>.</span></label>
+              <small class="field-error" id="acknowledge-error"></small>
+            </div>
+
+            <label class="form-honeypot" aria-hidden="true">Leave this field empty<input name="website" tabindex="-1" autocomplete="off" /></label>
+          </div>
+
+          <div class="form-submit-row">
+            <button class="button button-primary" type="submit">SEND US A MESSAGE <span class="button-arrow" aria-hidden="true">→</span></button>
+            <p class="form-submit-note">This form validates your entries in-browser. No message is sent until a secure, approved delivery service is configured.</p>
+          </div>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <section class="contact-next section-shell"><p><span class="availability-dot" aria-hidden="true"></span> The current site is ready for secure email or API integration when the required credentials and approval are available. Until then, the form does not transmit or store messages.</p></section>
+    </main>
+
+    <footer class="site-footer footer-expanded">
+      <div class="footer-about"><a class="footer-brand" href="/" aria-label="Aevum Technologies home"><img src="./assets/images/aevum-logo-gold.png" alt="Aevum Technologies" width="96" height="96" /></a><p>We build digital solutions, strengthen cybersecurity and help businesses put technology to work with clarity and confidence.</p></div>
+      <div class="footer-links"><h2>Explore</h2><a href="/about.html">About</a><a href="/services.html">Services</a><a href="/solutions.html">Solutions</a><a href="/careers.html">Careers</a></div>
+      <div class="footer-links"><h2>Connect</h2><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-use.html">Terms of Use</a></div>
+      <div class="footer-links"><h2>Reach us</h2><a href="mailto:aveumtechnologies@gmail.com">aveumtechnologies@gmail.com</a><a href="tel:+2348079912429">+234 807 991 2429</a></div>
+      <small>© <span data-current-year></span> Aevum Technologies Ltd.</small>
+    </footer>
+  </body>
+</html>
