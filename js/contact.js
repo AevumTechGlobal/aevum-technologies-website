@@ -113,7 +113,7 @@ function initialiseContactForm() {
     }
 
     const formattedPhone = phoneValue ? ` Phone: ${phoneValue}` : '';
-    status.textContent = `Your enquiry is ready to be sent, but no secure delivery endpoint is configured yet. Please contact Aevum directly by email or telephone to complete this request. Email: aveumtechnologies@gmail.com. Phone: +234 807 991 2429.${formattedPhone}`;
+    status.textContent = `Your enquiry is ready to be sent, but no secure delivery endpoint is configured yet. Please contact Aevum directly by email or telephone to complete this request. Email: aevumtechnologiesltd@gmail.com. Phone: +234 807 991 2429 or +234 808 985 0929.${formattedPhone}`;
   });
 }
 

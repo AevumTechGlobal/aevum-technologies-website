@@ -2775,6 +2775,86 @@ html[data-theme='light'] .founder-card {
     line-height: 1.8;
   }
 
+  .contact-details-block {
+    display: grid;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .contact-context .contact-details-block a,
+  .contact-context .contact-details-block a:visited {
+    display: flex;
+    min-width: 0;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 11px 12px;
+    border: 1px solid rgba(217, 165, 44, 0.16);
+    background: rgba(217, 165, 44, 0.035);
+    color: var(--paper);
+    text-decoration: none;
+    transition: border-color 160ms ease, background 160ms ease;
+  }
+
+  .contact-context .contact-details-block a:hover,
+  .contact-context .contact-details-block a:focus-visible {
+    border-color: rgba(217, 165, 44, 0.48);
+    background: rgba(217, 165, 44, 0.08);
+  }
+
+  .contact-details-block a > span {
+    color: var(--gold-bright);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .contact-details-block a > strong {
+    overflow-wrap: anywhere;
+    color: var(--paper);
+    font-size: 11px;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  .contact-social-handles {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(217, 165, 44, 0.16);
+  }
+
+  .contact-social-handles h3 {
+    margin: 0 0 12px;
+    color: var(--gold-bright);
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  .contact-social-handle-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px 16px;
+  }
+
+  .contact-social-handle-list > span {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 3px;
+    color: #bcbcb9;
+    font-size: 10px;
+  }
+
+  .contact-social-handle-list b {
+    color: #888986;
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
   .contact-truth {
     display: flex;
     gap: 11px;
@@ -3064,6 +3144,26 @@ html[data-theme='light'] .founder-card {
   .footer-links a:hover,
   .footer-links a:focus-visible {
     color: var(--gold-bright);
+  }
+
+  .footer-social-handles {
+    display: grid;
+    gap: 5px;
+    margin-top: 2px;
+  }
+
+  .footer-social-handles > span {
+    display: grid;
+    grid-template-columns: 58px auto;
+    gap: 7px;
+    color: #9c9d9a;
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .footer-social-handles b {
+    color: var(--gold-bright);
+    font-weight: 500;
   }
 
   .footer-expanded > small {
