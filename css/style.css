@@ -3003,6 +3003,12 @@ html[data-theme='light'] .founder-card {
     line-height: 1.5;
   }
 
+  .turnstile-widget {
+    width: min(100%, 300px);
+    min-height: 65px;
+    overflow: hidden;
+  }
+
   .form-honeypot {
     position: absolute !important;
     width: 1px !important;

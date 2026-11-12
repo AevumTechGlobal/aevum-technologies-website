@@ -58,7 +58,7 @@
               <span><b>YouTube</b><span>@AevumTechGlobal</span></span>
             </div>
           </div>
-          <div class="contact-truth"><span class="availability-dot" aria-hidden="true"></span><p><strong>Secure backend delivery is pending configuration.</strong> This form is currently set up for browser validation and is not connected to an email or CRM service.</p></div>
+          <div class="contact-truth"><span class="availability-dot" aria-hidden="true"></span><p><strong>Secure enquiry delivery.</strong> The form uses bot verification and sends messages to Aevum after the Cloudflare and email provider settings are configured.</p></div>
         </aside>
 
         <form class="enquiry-form" id="contact-form" novalidate>
@@ -90,18 +90,24 @@
               <small class="field-error" id="acknowledge-error"></small>
             </div>
 
+            <div class="form-field form-field-wide">
+              <span>Security verification <b aria-hidden="true">*</b></span>
+              <div id="turnstile-widget" class="turnstile-widget" aria-describedby="turnstile-help"></div>
+              <small class="field-hint" id="turnstile-help">Complete the security check before sending your enquiry.</small>
+            </div>
+
             <label class="form-honeypot" aria-hidden="true">Leave this field empty<input name="website" tabindex="-1" autocomplete="off" /></label>
           </div>
 
           <div class="form-submit-row">
-            <button class="button button-primary" type="submit">SEND US A MESSAGE <span class="button-arrow" aria-hidden="true">→</span></button>
-            <p class="form-submit-note">This form validates your entries in-browser. No message is sent until a secure, approved delivery service is configured.</p>
+            <button class="button button-primary" type="submit" disabled>SEND US A MESSAGE <span class="button-arrow" aria-hidden="true">→</span></button>
+            <p class="form-submit-note">Your enquiry is sent securely after Cloudflare and email delivery are configured. Please do not include passwords or other sensitive information.</p>
           </div>
           <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
         </form>
       </section>
 
-      <section class="contact-next section-shell"><p><span class="availability-dot" aria-hidden="true"></span> The current site is ready for secure email or API integration when the required credentials and approval are available. Until then, the form does not transmit or store messages.</p></section>
+      <section class="contact-next section-shell"><p><span class="availability-dot" aria-hidden="true"></span> Enquiries are sent to Aevum through the configured email provider. Until the Cloudflare settings and verified sender are ready, please contact us by email or phone. Do not include passwords or other sensitive information.</p></section>
     </main>
 
     <footer class="site-footer footer-expanded">
