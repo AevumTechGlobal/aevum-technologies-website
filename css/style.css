@@ -1135,8 +1135,13 @@ button {
   }
 
   .header-inner {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     column-gap: 14px;
+    justify-items: start;
+  }
+
+  .brand {
+    justify-self: start;
   }
 
   .brand img {
@@ -1152,6 +1157,8 @@ button {
     align-items: center;
     justify-content: center;
     gap: 6px;
+    justify-self: end;
+    margin-left: auto;
     border: 1px solid rgba(217, 165, 44, 0.45);
     border-radius: 4px;
     background: rgba(23, 30, 43, 0.94);
@@ -1178,16 +1185,23 @@ button {
     position: absolute;
     top: 71px;
     right: 0;
-    left: 0;
+    left: auto;
     display: none;
+    width: min(280px, calc(100vw - 18px));
     height: auto;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
     padding: 10px 20px 18px;
-    border-bottom: 1px solid rgba(217, 165, 44, 0.27);
+    border: 1px solid rgba(217, 165, 44, 0.22);
+    border-top: 0;
+    border-right: 0;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     background: rgba(11, 18, 32, 0.99);
-    box-shadow: 0 18px 26px rgba(0, 0, 0, 0.34);
+    box-shadow: -18px 18px 30px rgba(0, 0, 0, 0.32);
   }
 
   .primary-navigation.is-open {
