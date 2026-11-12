@@ -1,15 +1,15 @@
-const profilePlaceholder = new URL('../assets/images/team-profile-placeholder.svg', import.meta.url).href;
+const profilePlaceholder = '/images/team-profile-placeholder.svg';
 
 export const TEAM_IMAGE_PATHS = Object.freeze({
-  founder: 'assets/images/WhatsApp Image 2026-11-10 at 4.09.44 PM.jpeg',
-  member01: 'assets/images/WhatsApp Image 2026-11-10 at 4.13.01 PM (1).jpeg',
-  member02: 'assets/images/WhatsApp Image 2026-11-06 at 1.54.38 PM.jpeg',
-  member03: 'assets/images/WhatsApp Image 2026-11-06 at 6.24.34 PM.jpeg',
-  member04: 'assets/images/WhatsApp Image 2026-11-06 at 7.05.08 PM.jpeg',
-  member05: 'assets/images/WhatsApp Image 2026-11-06 at 7.12.14 PM.jpeg',
-  member06: 'assets/images/WhatsApp Image 2026-11-06 at 12.42.42 PM.jpeg',
-  member07: 'assets/images/WhatsApp Image 2026-11-10 at 4.12.46 PM.jpeg',
-  member08: 'assets/images/WhatsApp Image 2026-11-07 at 2.44.05 PM.jpeg',
+  founder: '/images/WhatsApp Image 2026-11-10 at 4.09.44 PM.jpeg',
+  member01: '/images/WhatsApp Image 2026-11-10 at 4.13.01 PM (1).jpeg',
+  member02: '/images/WhatsApp Image 2026-11-06 at 1.54.38 PM.jpeg',
+  member03: '/images/WhatsApp Image 2026-11-06 at 6.24.34 PM.jpeg',
+  member04: '/images/WhatsApp Image 2026-11-06 at 7.05.08 PM.jpeg',
+  member05: '/images/WhatsApp Image 2026-11-06 at 7.12.14 PM.jpeg',
+  member06: '/images/WhatsApp Image 2026-11-06 at 12.42.42 PM.jpeg',
+  member07: '/images/WhatsApp Image 2026-11-10 at 4.12.46 PM.jpeg',
+  member08: '/images/WhatsApp Image 2026-11-07 at 2.44.05 PM.jpeg',
 });
 
 const teamMembers = [
