@@ -1151,6 +1151,9 @@ button {
 
   .menu-toggle {
     display: flex;
+    position: absolute;
+    top: 14px;
+    right: 0;
     width: 44px;
     height: 44px;
     flex-direction: column;
@@ -1158,7 +1161,6 @@ button {
     justify-content: center;
     gap: 6px;
     justify-self: end;
-    margin-left: auto;
     border: 1px solid rgba(217, 165, 44, 0.45);
     border-radius: 4px;
     background: rgba(23, 30, 43, 0.94);
@@ -3465,6 +3467,24 @@ html[data-theme='light'] .founder-card {
       gap: 15px 11px;
     }
 
+    .turnstile-widget {
+      display: flex;
+      width: min(164px, 100%);
+      min-height: 50px;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      overflow: hidden;
+      border: 1px solid rgba(217, 165, 44, 0.2);
+      border-radius: 5px;
+      background: rgba(217, 165, 44, 0.035);
+    }
+
+    .turnstile-widget > div,
+    .turnstile-widget iframe {
+      max-width: 100%;
+    }
+
     .closing-cta {
       min-height: 0;
       align-items: flex-start;
@@ -4002,7 +4022,7 @@ html[data-theme='light'] .menu-toggle span {
 
 @media (max-width: 900px) {
   .header-inner {
-    grid-template-columns: minmax(0, 1fr) auto 44px;
+    grid-template-columns: minmax(0, 1fr) auto;
   }
 
   .hero-inner > .globe-stage {
